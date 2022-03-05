@@ -1,3 +1,2 @@
 #!/bin/bash
-od /tmp/iamafile -v
-
+od /tmp/iamafile | less
