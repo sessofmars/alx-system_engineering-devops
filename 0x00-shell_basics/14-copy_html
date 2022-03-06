@@ -1,0 +1,6 @@
+#!/bin/bash
+find myDir -0x00-shell_basics "*.html" -exec cp {} ~/alx-system_engineering_devops \;
+
+
+
+
