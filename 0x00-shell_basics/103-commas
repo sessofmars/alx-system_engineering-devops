@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a .test, test_dir/ 
+ls  -d *./ [[file0.,file1.]]
