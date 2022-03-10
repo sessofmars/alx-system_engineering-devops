@@ -1,0 +1,4 @@
+#!/bin/bash
+printenv
+printenv | less
+printenv | more
