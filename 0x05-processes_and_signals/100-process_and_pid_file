@@ -6,6 +6,11 @@
 #+ deletes the file /var/run/holbertonscript.pid and
 #+ terminates upon receiving a SIGQUIT or SIGTERM.
 
+terminate() {
+  rm /var/run/myscript.pid
+  exit
+}
+
 echo "$$" > /var/run/myscript.pid
 
 while true; do
@@ -16,7 +21,3 @@ while true; do
   trap 'terminate' SIGQUIT
 done
 
-terminate() {
-  rm /var/run/myscript.pid
-  exit
-}
